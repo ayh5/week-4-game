@@ -2,14 +2,14 @@
 
 $(document).ready(function() {
 
-	var targetNumber = Math.floor(Math.random()* 120)+19;
+	var targetNumber = Math.floor(Math.random()* 101)+19;
 	$('#target-number').text(targetNumber);
 
 
-	var btn1 = Math.floor(Math.random() * 12)+ 1;
-	var btn2 = Math.floor(Math.random() * 12)+ 1;
-	var btn3= Math.floor(Math.random() * 12)+ 1;
-	var btn4 = Math.floor(Math.random() * 12)+ 1;
+	var btn1 = Math.floor(Math.random() * 11)+ 1;
+	var btn2 = Math.floor(Math.random() * 11)+ 1;
+	var btn3= Math.floor(Math.random() * 11)+ 1;
+	var btn4 = Math.floor(Math.random() * 11)+ 1;
 
 	var wins = 0;
 	var losses = 0;
@@ -19,11 +19,11 @@ $(document).ready(function() {
 	$('#lossTally').text(losses);
 
 	function reset(){
-		var targetNumber = Math.floor(Math.random() * 120)+19;
-		var btn1 = Math.floor(Math.random() * 12)+ 1;
-		var btn2 = Math.floor(Math.random() * 12)+ 1;
-		var btn3 = Math.floor(Math.random() * 12)+ 1;
-		var btn4 = Math.floor(Math.random() * 12)+ 1;
+		var targetNumber = Math.floor(Math.random() * 101)+19;
+		var btn1 = Math.floor(Math.random() * 11)+ 1;
+		var btn2 = Math.floor(Math.random() * 11)+ 1;
+		var btn3 = Math.floor(Math.random() * 11)+ 1;
+		var btn4 = Math.floor(Math.random() * 11)+ 1;
 		totalScore = 0;
 	$('#target-number').text(targetNumber);
 	$('#totalScore').text(totalScore);
