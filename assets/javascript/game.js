@@ -2,15 +2,14 @@
 
 $(document).ready(function() {
 
-//set targetNumber to try to reach and append to id
-	var targetNumber = Math.floor(Math.random()*120)+19;
+	var targetNumber = Math.floor(Math.random()* 120)+19;
 	$('#target-number').text(targetNumber);
 
-//Generate random number for Crystals
-	var btn1 = Math.floor(Math.random()*12) + 1;
-	var btn2 = Math.floor(Math.random()*12) + 1;
-	var btn3= Math.floor(Math.random()*12) + 1;
-	var btn4 = Math.floor(Math.random()*12) + 1;
+
+	var btn1 = Math.floor(Math.random() * 12)+ 1;
+	var btn2 = Math.floor(Math.random() * 12)+ 1;
+	var btn3= Math.floor(Math.random() * 12)+ 1;
+	var btn4 = Math.floor(Math.random() * 12)+ 1;
 
 	var wins = 0;
 	var losses = 0;
@@ -20,21 +19,23 @@ $(document).ready(function() {
 	$('#lossTally').text(losses);
 
 	function reset(){
-		var targetNumber = Math.floor(Math.random()*120)+19;
-		var btn1 = Math.floor(Math.random()*12) + 1;
-		var btn2 = Math.floor(Math.random()*12) + 1;
-		var btn3 = Math.floor(Math.random()*12) + 1;
-		var btn4 = Math.floor(Math.random()*12) + 1;
-		var totalScore = 0;
-
+		var targetNumber = Math.floor(Math.random() * 120)+19;
+		var btn1 = Math.floor(Math.random() * 12)+ 1;
+		var btn2 = Math.floor(Math.random() * 12)+ 1;
+		var btn3 = Math.floor(Math.random() * 12)+ 1;
+		var btn4 = Math.floor(Math.random() * 12)+ 1;
+		totalScore = 0;
+	$('#target-number').text(targetNumber);
 	$('#totalScore').text(totalScore);
 	}
+
 
 	function addwin(){
 		wins++;
 		$('#winTally').text(wins);
 		reset();
 	}
+
 
 	function addloss(){
 		losses++;
@@ -61,7 +62,7 @@ $('#pinkCrystal').on('click', function(){
 		   if (totalScore ===targetNumber){
 		   	addwin();
 		   }
-		   else if (totalScore > targetNumber){
+		   else if(totalScore > targetNumber){
 		   	addloss();
 		   }
 
@@ -74,7 +75,7 @@ $('#whiteCrystal').on('click', function(){
 		   if (totalScore ===targetNumber){
 		   	addwin();
 		   }
-		   else if (totalScore > targetNumber){
+		   else if(totalScore > targetNumber){
 		   	addloss();
 		   }
 
