@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CrystalsCollector Game</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="header">Crystals Collector!</h1>
+                </div>
+            </div> <!--end row div-->
+        </div> <!--end container-->
+    </div><!--End container-fluid DIV-->
+        <div class="container-fluid">
+            <div class="container directions">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="directions">You will be given a random number at the start of the game
+                            <br>
+                            <br>
+                            <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                            <br>
+                            <br>
+                            <br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                            <br>
+                            <br>
+                            <br> The value of each crystal is hidden from you until you click on it.
+                            <br>
+                            <br>
+                            <br> Each time when the game starts, the game will change the values of each crystal.
+                        </p>
+                    </div>
+                </div> <!--End row DIV-->
+            </div> <!--End container DIV-->
+        </div><!--End container-fluid DIV-->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                    	<div class= "col-md-4 randNum">
+                    		<h1>Target Number: <span id="target-number"></span></h1>
+                    	</div>
+                    	<div class = "col-md-4 wins-losses">
+                    	<h3>Wins:<span id= "winTally"></span>
+</h3><br><h3>Losses:<span id="lossTally"></span></h3>
+                    	</div>
+                        <div class="col-md-4"></div>
+                    </div> <!--end row div-->
+                </div>
+            </div><!--end container fluid div-->
+
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row buttons">
+                        <button id = "greenCrystal" class="btn btn-default" type="submit"><img src="assets/images/green-crystal.png" />
+                        </button>
+
+                        <button id = "pinkCrystal" class="btn btn-default" type="submit"><img src="assets/images/pink-crystal.png" /></button>
+                        <button id = "whiteCrystal" class="btn btn-default" type="submit"><img src="assets/images/white-crystal.png" /></button>
+
+                        <button id = "yellowCrystal" class="btn btn-default" type="submit"><img src="assets/images/yellow-crystal.png" /></button>
+                    </div>
+                </div>
+            </div>
+        <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="total-score-header">Your total score is:</h2>
+                        </div>
+                        <div class="col-md-8"></div>
+                    </div>
+                </div>
+            </div>
+         <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 numeric-score-box"><span id="totalScore"></span>
+                        </div>
+                        <div class="col-md-8"></div>
+                    </div><!--end row-->
+                </div>
+            </div>   
+    </body>
+    </html>
+            
